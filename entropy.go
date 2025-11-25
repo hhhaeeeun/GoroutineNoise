@@ -78,7 +78,7 @@ func main() {
 	}
 
 	// 파일 이름 생성
-	fileName := fmt.Sprintf("results_%d_%d_%d.bin", counter_val, Trials/10000, *j)
+	fileName := fmt.Sprintf("251124_results_%d_%d_%d.bin", counter_val, Trials/10000, *j)
 	wg.Add(1)
 	go saveResultsAsBinary(fileName, results, &wg)
 
